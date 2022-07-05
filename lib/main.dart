@@ -211,7 +211,14 @@ class HomePage extends StatelessWidget {
                   margin: const EdgeInsets.only(top: 15),
                   width: 150,
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    gradient: LinearGradient(
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                      colors: [
+                        Colors.blueAccent.shade200,
+                        Colors.blueAccent.shade700,
+                      ],
+                    ),
                     borderRadius: BorderRadius.circular(25),
                     boxShadow: [
                       BoxShadow(
@@ -226,13 +233,13 @@ class HomePage extends StatelessWidget {
                     children: [
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
+                        children: const [
                           Icon(
                             Icons.light,
                             size: 35,
-                            color: Colors.blueAccent.shade700,
+                            color: Colors.white,
                           ),
-                          const Icon(
+                          Icon(
                             Icons.circle,
                             size: 10,
                             color: Colors.red,
@@ -247,11 +254,12 @@ class HomePage extends StatelessWidget {
                             style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.w600,
+                              color: Colors.white,
                             ),
                           ),
                           const SizedBox(height: 10),
                           Text(
-                            'CLOSED',
+                            'OPENED',
                             style: TextStyle(
                               fontSize: 12,
                               color: Colors.grey.shade400,
@@ -455,6 +463,80 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
               ],
+            ),
+            Container(
+              margin: const EdgeInsets.symmetric(horizontal: 50, vertical: 15),
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.centerLeft,
+                  end: Alignment.centerRight,
+                  colors: [
+                    Colors.blue.shade400,
+                    Colors.blue.shade600,
+                  ],
+                ),
+                borderRadius: BorderRadius.circular(10),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.shade500,
+                    blurRadius: 10,
+                    spreadRadius: 3,
+                    offset: const Offset(8, 6),
+                  ),
+                ],
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  const Icon(
+                    Icons.music_note,
+                    color: Colors.white,
+                    size: 35,
+                  ),
+                  const SizedBox(width: 10),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: const [
+                      Text(
+                        'Everyday Life',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w500),
+                      ),
+                      Text(
+                        'Coldplay',
+                        style: TextStyle(
+                            color: Colors.white54,
+                            fontSize: 10,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(width: 105),
+                  Row(
+                    children: const [
+                      Icon(
+                        Icons.skip_previous,
+                        color: Colors.white60,
+                        size: 18,
+                      ),
+                      Icon(
+                        Icons.pause,
+                        color: Colors.white,
+                        size: 14,
+                      ),
+                      Icon(
+                        Icons.skip_next,
+                        color: Colors.white60,
+                        size: 18,
+                      ),
+                    ],
+                  )
+                ],
+              ),
             ),
           ],
         ),
