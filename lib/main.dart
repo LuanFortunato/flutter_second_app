@@ -239,7 +239,7 @@ class HomePage extends StatelessWidget {
                           ),
                         ],
                       ),
-                      const SizedBox(height: 25),
+                      const Padding(padding: EdgeInsets.all(20)),
                       Column(
                         children: [
                           const Text(
@@ -302,7 +302,7 @@ class HomePage extends StatelessWidget {
                           ),
                         ],
                       ),
-                      const SizedBox(height: 25),
+                      const Padding(padding: EdgeInsets.all(20)),
                       Column(
                         children: [
                           const Text(
@@ -367,7 +367,7 @@ class HomePage extends StatelessWidget {
                           ),
                         ],
                       ),
-                      const SizedBox(height: 25),
+                      const Padding(padding: EdgeInsets.all(20)),
                       Column(
                         children: [
                           const Text(
@@ -430,7 +430,7 @@ class HomePage extends StatelessWidget {
                           ),
                         ],
                       ),
-                      const SizedBox(height: 25),
+                      const Padding(padding: EdgeInsets.all(20)),
                       Column(
                         children: [
                           const Text(
