@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../next_page/next_page.dart';
 import 'widgets/body_home.dart';
 

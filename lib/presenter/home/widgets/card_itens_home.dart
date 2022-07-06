@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
 class CardItensHome extends StatelessWidget {
+  final String text;
+  final IconData icon;
+
   const CardItensHome({
     Key? key,
-    bool? opened,
-    Icon? icon,
-    String? text,
+    required this.text,
+    required this.icon,
   }) : super(key: key);
 
   @override
@@ -40,13 +42,13 @@ class CardItensHome extends StatelessWidget {
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: const [
+            children: [
               Icon(
-                Icons.light,
+                icon,
                 size: 35,
                 color: Colors.white,
               ),
-              Icon(
+              const Icon(
                 Icons.circle,
                 size: 10,
                 color: Colors.red,
@@ -56,9 +58,9 @@ class CardItensHome extends StatelessWidget {
           const Padding(padding: EdgeInsets.all(20)),
           Column(
             children: [
-              const Text(
-                'Lamp',
-                style: TextStyle(
+              Text(
+                text,
+                style: const TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.w600,
                   color: Colors.white,

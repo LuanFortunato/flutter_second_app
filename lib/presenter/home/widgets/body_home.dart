@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'card_itens_home.dart';
 import 'card_music_footer.dart';
 import 'card_weather_home.dart';
@@ -20,10 +19,10 @@ class BodyHome extends StatelessWidget {
           const ListTextHorizontal(),
           Wrap(
             children: const [
-              CardItensHome(),
-              CardItensHome(),
-              CardItensHome(),
-              CardItensHome(),
+              CardItensHome(text: 'Lamp', icon: Icons.light),
+              CardItensHome(text: 'Router', icon: Icons.router),
+              CardItensHome(text: 'Air', icon: Icons.air),
+              CardItensHome(text: 'Fridge', icon: Icons.kitchen),
               //     Container(
               //       padding: const EdgeInsets.symmetric(
               //         horizontal: 20,
