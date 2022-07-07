@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'widgets/body_next_page.dart';
+import 'widgets/body_languages_page.dart';
 
-class NextPage extends StatelessWidget {
-  const NextPage({Key? key}) : super(key: key);
+class LanguagesPage extends StatelessWidget {
+  const LanguagesPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class NextPage extends StatelessWidget {
         foregroundColor: Colors.black,
         backgroundColor: Colors.white,
       ),
-      body: const BodyNextPage(),
+      body: const BodyLanguagesPage(),
     );
   }
 }

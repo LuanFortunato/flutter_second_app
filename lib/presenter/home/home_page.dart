@@ -1,5 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../next_page/next_page.dart';
+import '../next_page/languages_page.dart';
 import 'widgets/body_home.dart';
 
 class HomePage extends StatelessWidget {
@@ -33,14 +34,14 @@ class HomePage extends StatelessWidget {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (context) {
-                    return const NextPage();
+                    return const LanguagesPage();
                   },
                 ),
               );
             },
             icon: const Icon(
-              Icons.keyboard_arrow_right_sharp,
-              size: 40,
+              CupertinoIcons.gear_solid,
+              size: 30,
               color: Colors.black,
             ),
           ),
